@@ -13,8 +13,8 @@ Proyecto final **OT2026-WEB**. Sitio web estático, escrito a mano en HTML5 sem�
 | Integrante | Rol | Trabajo |
 |---|---|---|
 | **Luis Carlos Ramírez Mora** | Persona 1 — Líder Técnico y módulo de vacantes | Estructura del repositorio y carpetas. `css/variables.css` (tokens extraídos de Figma), `css/base.css` (reset, tipografía, foco visible, "saltar al contenido") y `css/layout.css`. Plantilla maestra: encabezado con navegación, pie de página y botón flotante de ayuda (RF-052). Páginas `index.html` (buscador, filtros y 6 tarjetas) y `vacante.html` (detalle con "Postularme" y "Llamar"). Componentes `.tarjeta-vacante`, `.buscador-filtros`, `.detalle-vacante`, `.boton`, `.etiqueta-dato` y `.boton-ayuda`. Revisión del Figma y ajustes de contraste. |
-| _[Nombre Persona 2]_ | Persona 2 — Autenticación y candidatos | `login.html`, `registro-candidato.html` (con `fieldset` y `legend`), componente `.campo-formulario`, auditoría Lighthouse y pruebas responsivas. _(completar al terminar)_ |
-| _[Nombre Persona 3]_ | Persona 3 — Gestión y empresa | `mis-solicitudes.html`, `empresa-vacantes.html`, componentes `.etiqueta-estatus` y `.tabla-responsiva`, validación W3C y este README. _(completar al terminar)_ |
+| **Victor Gilberto Márquez Gallegos** | Persona 2 — Autenticación y candidatos | `login.html`, `registro-candidato.html` (con `fieldset` y `legend`), componente `.campo-formulario`, auditoría Lighthouse y pruebas responsivas. _(completar al terminar)_ |
+| **Adriana Montserrat Reyna Cuatianquiz** | Persona 3 — Gestión y empresa | `mis-solicitudes.html`, `empresa-vacantes.html`, componentes `.etiqueta-estatus` y `.tabla-responsiva`, validación W3C y este README. _(completar al terminar)_ |
 
 ---
 
@@ -116,21 +116,17 @@ amac-web/
 
 **`index.html` en celular (390 px)**
 
-![index en celular](img/captura-index-movil.png)
+![index en celular](img/movil.png)
 
 **`index.html` en escritorio (1440 px)**
 
-![index en escritorio](img/captura-index-escritorio.png)
+![index en escritorio](img/laptop.png)
 
 **Lighthouse – Accessibility de `index.html`**
 
-![Lighthouse Accessibility](img/captura-lighthouse.png)
+![Lighthouse Accessibility](img/lighthouse.png)
 
-_Pendiente: guardar la captura como `img/captura-lighthouse.png`._
 
-## Cómo ver el sitio
-
-Abrir `index.html` en el navegador (no requiere servidor ni instalación). Para publicar: Vercel → Add New → Project → `amac-web` → Framework Preset **Other** → Deploy.
 
 ## Flujo de la demo
 
