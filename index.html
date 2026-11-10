@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacantes disponibles | AMAC</title>
+  <meta name="description" content="Encuentre un empleo y postúlese en pocos pasos. Vacantes en Monterrey y su área metropolitana.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:wght@400;600&amp;family=Work+Sans:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__interior">
+      <a class="encabezado__marca" href="index.html" aria-label="AMAC, ir al inicio">AMAC</a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <ul class="navegacion__lista">
+          <li><a class="navegacion__enlace" href="index.html" aria-current="page">Vacantes</a></li>
+          <li><a class="navegacion__enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+          <li><a class="navegacion__enlace" href="empresa-vacantes.html">Para empresas</a></li>
+          <li><a class="navegacion__enlace" href="login.html">Iniciar sesión</a></li>
+          <li><a class="navegacion__enlace navegacion__enlace--destacado" href="registro-candidato.html">Crear cuenta</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="principal" id="principal">
+    <div class="contenedor">
+      <div class="cabecera-pagina">
+        <h1>Vacantes disponibles</h1>
+        <p class="cabecera-pagina__descripcion">Encuentre un empleo y postúlese en pocos pasos.</p>
+      </div>
+
+      <form class="buscador-filtros" action="index.html" method="get" role="search" aria-label="Buscar vacantes">
+        <div class="buscador-filtros__campos">
+          <div class="buscador-filtros__campo">
+            <label class="buscador-filtros__etiqueta" for="buscar-vacante">Buscar una vacante</label>
+            <input class="buscador-filtros__control" type="search" id="buscar-vacante" name="busqueda" autocomplete="off" placeholder="Ejemplo: recepcionista">
+          </div>
+          <div class="buscador-filtros__campo">
+            <label class="buscador-filtros__etiqueta" for="ciudad">Ciudad</label>
+            <select class="buscador-filtros__control" id="ciudad" name="ciudad">
+            <option value="">Todas las ciudades</option>
+            <option value="monterrey">Monterrey</option>
+            <option value="san-pedro">San Pedro Garza García</option>
+            <option value="santa-catarina">Santa Catarina</option>
+            <option value="san-nicolas">San Nicolás de los Garza</option>
+            <option value="guadalupe">Guadalupe</option>
+            </select>
+          </div>
+          <div class="buscador-filtros__campo">
+            <label class="buscador-filtros__etiqueta" for="horario">Horario</label>
+            <select class="buscador-filtros__control" id="horario" name="horario">
+            <option value="">Todos los horarios</option>
+            <option value="medio-tiempo">Medio tiempo</option>
+            <option value="tiempo-completo">Tiempo completo</option>
+            <option value="por-horas">Por horas</option>
+            </select>
+          </div>
+          <div class="buscador-filtros__campo">
+            <label class="buscador-filtros__etiqueta" for="categoria">Categoría</label>
+            <select class="buscador-filtros__control" id="categoria" name="categoria">
+            <option value="">Todas las categorías</option>
+            <option value="administracion">Administración</option>
+            <option value="atencion">Atención al cliente</option>
+            <option value="seguridad">Seguridad</option>
+            <option value="ventas">Ventas y cajas</option>
+            <option value="asesoria">Asesoría y capacitación</option>
+            </select>
+          </div>
+        </div>
+
+        <fieldset class="buscador-filtros__grupo">
+          <legend class="buscador-filtros__leyenda">Mostrar:</legend>
+          <div class="buscador-filtros__opciones">
+            <div class="buscador-filtros__opcion">
+              <input class="buscador-filtros__radio" type="radio" id="modalidad-todas" name="modalidad" value="todas" checked>
+              <label class="buscador-filtros__chip" for="modalidad-todas">Todas</label>
+            </div>
+            <div class="buscador-filtros__opcion">
+              <input class="buscador-filtros__radio" type="radio" id="modalidad-presencial" name="modalidad" value="presencial">
+              <label class="buscador-filtros__chip" for="modalidad-presencial">Presencial</label>
+            </div>
+            <div class="buscador-filtros__opcion">
+              <input class="buscador-filtros__radio" type="radio" id="modalidad-remoto" name="modalidad" value="remoto">
+              <label class="buscador-filtros__chip" for="modalidad-remoto">Remoto</label>
+            </div>
+            <div class="buscador-filtros__opcion">
+              <input class="buscador-filtros__radio" type="radio" id="modalidad-hibrido" name="modalidad" value="hibrido">
+              <label class="buscador-filtros__chip" for="modalidad-hibrido">Híbrido</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="buscador-filtros__acciones">
+          <button class="boton boton--acento" type="submit">
+            <img class="boton__icono" src="img/icono-buscar.svg" alt="" width="24" height="24">
+            Buscar vacantes
+          </button>
+        </div>
+      </form>
+
+      <p class="conteo-resultados" aria-live="polite">6 vacantes encontradas</p>
+
+      <section class="lista-vacantes" aria-label="Resultados de vacantes">
+        <article class="tarjeta-vacante">
+          <h2 class="tarjeta-vacante__titulo">Asesor de creación de proyectos</h2>
+          <p class="tarjeta-vacante__empresa">Incubadora Regia</p>
+          <ul class="tarjeta-vacante__datos">
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-ubicacion.svg" alt="" width="20" height="20"><span>San Pedro Garza García</span></li>
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-maletin.svg" alt="" width="20" height="20"><span>Presencial</span></li>
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-reloj.svg" alt="" width="20" height="20"><span>Medio tiempo</span></li>
+          </ul>
+          <p class="tarjeta-vacante__publicada">Publicada hace 2 días</p>
+          <div class="tarjeta-vacante__accion">
+            <a class="boton boton--primario boton--bloque" href="vacante.html" aria-label="Ver vacante de Asesor de creación de proyectos en Incubadora Regia">Ver vacante</a>
+          </div>
+        </article>
+        <article class="tarjeta-vacante">
+          <h2 class="tarjeta-vacante__titulo">Mentor para emprendedores</h2>
+          <p class="tarjeta-vacante__empresa">Incubadora Regia</p>
+          <ul class="tarjeta-vacante__datos">
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-ubicacion.svg" alt="" width="20" height="20"><span>Monterrey</span></li>
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-maletin.svg" alt="" width="20" height="20"><span>Remoto</span></li>
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-reloj.svg" alt="" width="20" height="20"><span>Medio tiempo</span></li>
+          </ul>
+          <p class="tarjeta-vacante__publicada">Publicada hace 3 días</p>
+          <div class="tarjeta-vacante__accion">
+            <a class="boton boton--primario boton--bloque" href="vacante.html" aria-label="Ver vacante de Mentor para emprendedores en Incubadora Regia">Ver vacante</a>
+          </div>
+        </article>
+        <article class="tarjeta-vacante">
+          <h2 class="tarjeta-vacante__titulo">Auxiliar administrativo</h2>
+          <p class="tarjeta-vacante__empresa">Despacho Contable Vidal</p>
+          <ul class="tarjeta-vacante__datos">
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-ubicacion.svg" alt="" width="20" height="20"><span>Monterrey</span></li>
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-maletin.svg" alt="" width="20" height="20"><span>Híbrido</span></li>
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-reloj.svg" alt="" width="20" height="20"><span>Tiempo completo</span></li>
+          </ul>
+          <p class="tarjeta-vacante__publicada">Publicada hace 4 días</p>
+          <div class="tarjeta-vacante__accion">
+            <a class="boton boton--primario boton--bloque" href="vacante.html" aria-label="Ver vacante de Auxiliar administrativo en Despacho Contable Vidal">Ver vacante</a>
+          </div>
+        </article>
+        <article class="tarjeta-vacante">
+          <h2 class="tarjeta-vacante__titulo">Recepcionista</h2>
+          <p class="tarjeta-vacante__empresa">Hotel Plaza Monterrey</p>
+          <ul class="tarjeta-vacante__datos">
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-ubicacion.svg" alt="" width="20" height="20"><span>Centro, Monterrey</span></li>
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-maletin.svg" alt="" width="20" height="20"><span>Presencial</span></li>
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-reloj.svg" alt="" width="20" height="20"><span>Tiempo completo</span></li>
+          </ul>
+          <p class="tarjeta-vacante__publicada">Publicada hace 5 días</p>
+          <div class="tarjeta-vacante__accion">
+            <a class="boton boton--primario boton--bloque" href="vacante.html" aria-label="Ver vacante de Recepcionista en Hotel Plaza Monterrey">Ver vacante</a>
+          </div>
+        </article>
+        <article class="tarjeta-vacante">
+          <h2 class="tarjeta-vacante__titulo">Cajero(a)</h2>
+          <p class="tarjeta-vacante__empresa">Supermercado La Fe</p>
+          <ul class="tarjeta-vacante__datos">
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-ubicacion.svg" alt="" width="20" height="20"><span>Santa Catarina</span></li>
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-maletin.svg" alt="" width="20" height="20"><span>Presencial</span></li>
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-reloj.svg" alt="" width="20" height="20"><span>Medio tiempo</span></li>
+          </ul>
+          <p class="tarjeta-vacante__publicada">Publicada hace 6 días</p>
+          <div class="tarjeta-vacante__accion">
+            <a class="boton boton--primario boton--bloque" href="vacante.html" aria-label="Ver vacante de Cajero(a) en Supermercado La Fe">Ver vacante</a>
+          </div>
+        </article>
+        <article class="tarjeta-vacante">
+          <h2 class="tarjeta-vacante__titulo">Vigilante</h2>
+          <p class="tarjeta-vacante__empresa">Residencial Las Lomas</p>
+          <ul class="tarjeta-vacante__datos">
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-ubicacion.svg" alt="" width="20" height="20"><span>San Nicolás de los Garza</span></li>
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-maletin.svg" alt="" width="20" height="20"><span>Presencial</span></li>
+            <li class="etiqueta-dato"><img class="etiqueta-dato__icono" src="img/icono-reloj.svg" alt="" width="20" height="20"><span>Tiempo completo</span></li>
+          </ul>
+          <p class="tarjeta-vacante__publicada">Publicada hace 1 semana</p>
+          <div class="tarjeta-vacante__accion">
+            <a class="boton boton--primario boton--bloque" href="vacante.html" aria-label="Ver vacante de Vigilante en Residencial Las Lomas">Ver vacante</a>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__rejilla">
+      <div>
+        <p class="pie__marca">AMAC</p>
+        <p>Plataforma de empleo para personas adultas mayores en Monterrey y su área metropolitana.</p>
+      </div>
+      <nav aria-label="Enlaces del pie de página">
+        <p class="pie__titulo">Explorar</p>
+        <ul class="pie__lista">
+          <li><a class="pie__enlace" href="index.html">Vacantes disponibles</a></li>
+          <li><a class="pie__enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+          <li><a class="pie__enlace" href="empresa-vacantes.html">Para empresas</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="pie__titulo">¿Necesita ayuda?</p>
+        <p>Llámenos y con gusto le ayudamos a postularse.</p>
+        <p><a class="pie__enlace" href="tel:+528100000000">81 0000 0000</a></p>
+      </div>
+    </div>
+    <div class="contenedor">
+      <p class="pie__legal">© 2026 AMAC · Proyecto escolar OT2026-WEB</p>
+    </div>
+  </footer>
+
+  <a class="boton-ayuda" href="tel:+528100000000">
+    <img class="boton-ayuda__icono" src="img/icono-telefono.svg" alt="" width="24" height="24">
+    <span>Llamar a AMAC</span>
+  </a>
+</body>
+</html>

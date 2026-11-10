@@ -1,0 +1,165 @@
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  min-height: var(--altura-control);
+  padding: 0.75rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: var(--radio);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.boton__icono { width: 1.5rem; height: 1.5rem; flex: none; }
+.boton--bloque { width: 100%; }
+
+.boton--primario { background: var(--color-primario); border-color: var(--color-primario); color: #ffffff; }
+.boton--primario:hover { background: var(--color-primario-oscuro); }
+
+/* Texto oscuro sobre coral: 8.5:1 (blanco sobre coral solo daba 2.5:1) */
+.boton--acento { background: var(--color-acento); border-color: var(--color-acento); color: var(--color-texto); }
+.boton--acento:hover { background: var(--color-acento-oscuro); border-color: var(--color-acento-oscuro); }
+
+.boton--secundario { background: #ffffff; border-color: var(--color-primario); color: var(--color-primario); }
+.boton--secundario:hover { background: var(--color-fondo-busqueda); }
+
+/* ---------- Dato en forma de pastilla  ---------- */
+.etiqueta-dato {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.25rem;
+  padding: 0.25rem 0.75rem;
+  background: #ffffff;
+  border: 1px solid var(--color-borde-tarjeta);
+  border-radius: var(--radio);
+}
+.etiqueta-dato__icono { width: 1.25rem; height: 1.25rem; flex: none; }
+
+/* ---------- Tarjeta de vacante  ---------- */
+.tarjeta-vacante {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+  padding: 1.5rem;
+  background: var(--color-fondo-tarjeta);
+  border: 1px solid var(--color-borde-tarjeta);
+  border-radius: var(--radio);
+}
+.tarjeta-vacante__titulo { margin: 0; font-size: var(--texto-titulo-tarjeta); }
+.tarjeta-vacante__empresa { margin: 0; color: var(--color-texto-suave); }
+.tarjeta-vacante__datos { display: flex; flex-wrap: wrap; gap: var(--espacio-s); margin: 0; padding: 0; list-style: none; }
+.tarjeta-vacante__publicada { margin: 0; color: var(--color-texto-suave); }
+.tarjeta-vacante__accion { margin-top: auto; }
+
+/* ---------- Buscador y filtros  ---------- */
+.buscador-filtros {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--espacio-l);
+  padding: 1.5rem;
+  background: var(--color-fondo-busqueda);
+  border-radius: var(--radio);
+}
+.buscador-filtros__campos { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--espacio-m); }
+.buscador-filtros__campo { display: flex; flex-direction: column; gap: var(--espacio-s); }
+.buscador-filtros__etiqueta { font-weight: 600; }
+.buscador-filtros__control {
+  width: 100%;
+  min-width: 0;
+  min-height: 3.25rem;
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+  border: 2px solid var(--color-borde-campo);
+  border-radius: var(--radio);
+}
+.buscador-filtros__control::placeholder { color: var(--color-texto-suave); opacity: 1; }
+
+.buscador-filtros__grupo { margin: 0; padding: 0; border: 0; min-width: 0; }
+.buscador-filtros__leyenda { margin-bottom: var(--espacio-s); padding: 0; font-weight: 600; }
+.buscador-filtros__opciones { display: flex; flex-wrap: wrap; gap: var(--espacio-s) var(--espacio-m); }
+.buscador-filtros__opcion { position: relative; }
+.buscador-filtros__radio { position: absolute; top: 0; left: 0; width: 1px; height: 1px; opacity: 0; }
+.buscador-filtros__chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--altura-control);
+  padding: 0.5rem 1.5rem;
+  background: #ffffff;
+  border: 2px solid var(--color-borde-campo);
+  border-radius: var(--radio);
+  cursor: pointer;
+}
+.buscador-filtros__radio:checked + .buscador-filtros__chip { background: var(--color-acento); font-weight: 700; }
+.buscador-filtros__radio:focus-visible + .buscador-filtros__chip { outline: 3px solid var(--color-foco); outline-offset: 3px; }
+.buscador-filtros__acciones { display: flex; }
+
+.conteo-resultados { margin: var(--espacio-l) 0 var(--espacio-m); font-weight: 600; }
+
+/* ---------- Detalle de vacantes ---------- */
+.detalle-vacante__volver {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--espacio-s);
+  min-height: var(--altura-control);
+  margin-bottom: var(--espacio-m);
+  color: var(--color-texto);
+  font-weight: 700;
+}
+.detalle-vacante__volver-icono { width: 1.25rem; height: 1.25rem; }
+.detalle-vacante__empresa { margin: 0 0 var(--espacio-m); font-weight: 700; }
+.detalle-vacante__etiquetas { display: flex; flex-wrap: wrap; gap: var(--espacio-s); margin: 0; padding: 0; list-style: none; }
+
+.detalle-vacante__contenido h2 { margin: var(--espacio-l) 0 var(--espacio-s); font-size: var(--texto-seccion); font-weight: 400; }
+.detalle-vacante__contenido h2:first-child { margin-top: 0; }
+.detalle-vacante__contenido p,
+.detalle-vacante__lista { font-size: var(--texto-lista); line-height: 1.8; }
+.detalle-vacante__lista { margin: 0; padding-left: 1.5rem; }
+
+.detalle-vacante__lateral { display: grid; gap: var(--espacio-m); }
+.detalle-vacante__resumen,
+.detalle-vacante__ayuda { padding: 1.5rem; border-radius: var(--radio); }
+.detalle-vacante__resumen { background: var(--color-fondo-resumen); }
+.detalle-vacante__ayuda { background: var(--color-fondo-busqueda); }
+.detalle-vacante__resumen h2,
+.detalle-vacante__ayuda h2 { font-size: var(--texto-h2); font-weight: 400; }
+.detalle-vacante__datos { margin: 0 0 var(--espacio-m); }
+.detalle-vacante__datos dt { margin-top: var(--espacio-m); }
+.detalle-vacante__datos dd { margin: 0; font-weight: 700; }
+.detalle-vacante__nota { margin: var(--espacio-m) 0 0; }
+.detalle-vacante__ayuda p { margin-bottom: var(--espacio-m); }
+
+/* ---------- Boton flotante de ayuda ---------- */
+.boton-ayuda {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  min-height: 3.5rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--color-acento);
+  border: 2px solid var(--color-primario);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra-ayuda);
+  color: var(--color-texto);
+  font-weight: 700;
+  text-decoration: none;
+}
+.boton-ayuda:hover { background: var(--color-acento-oscuro); }
+.boton-ayuda:focus-visible { outline: 3px solid var(--color-foco); outline-offset: 3px; box-shadow: 0 0 0 3px #ffffff; }
+.boton-ayuda__icono { width: 1.5rem; height: 1.5rem; }
+
+/* ---------- Tablet y escritorio ---------- */
+@media (min-width: 768px) {
+  .buscador-filtros__campos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .buscador-filtros__acciones { justify-content: flex-end; }
+}
+@media (min-width: 1024px) {
+  .buscador-filtros__campos { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
