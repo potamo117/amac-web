@@ -209,3 +209,58 @@
   margin: 0;
   color: var(--color-error);
 }
+
+/* Persona 3 — Estados de las solicitudes */
+.etiqueta-estatus {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+.etiqueta-estatus--en-revision {
+  background-color: var(--color-fondo-resumen);
+  color: var(--color-primario);
+}
+
+.etiqueta-estatus--aceptada {
+  background-color: var(--color-estatus-aceptada-fondo);
+  color: var(--color-estatus-aceptada-texto);
+}
+
+.etiqueta-estatus--rechazada {
+  background-color: var(--color-estatus-rechazada-fondo);
+  color: var(--color-estatus-rechazada-texto);
+}
+
+/* Persona 3 — Tabla del panel de vacantes */
+.tabla-responsiva {
+  max-width: 100%;
+  margin-block: 1.5rem;
+  overflow-x: auto;
+}
+
+.tabla-responsiva table {
+  width: 100%;
+  min-width: 42rem;
+  border-collapse: collapse;
+}
+
+.tabla-responsiva caption {
+  padding-block-end: 0.75rem;
+  font-weight: 700;
+  text-align: start;
+}
+
+.tabla-responsiva th,
+.tabla-responsiva td {
+  padding: 0.75rem;
+  border-block-end: 1px solid var(--color-primario);
+  text-align: start;
+  vertical-align: middle;
+}
+
+.tabla-responsiva thead {
+  background-color: var(--color-fondo-resumen);
+  color: var(--color-primario);
+}

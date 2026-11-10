@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Panel de vacantes | AMAC</title>
+  <meta name="description" content="Inicia sesión en AMAC con tu correo y contraseña.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:wght@400;600&amp;family=Work+Sans:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variable.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__interior">
+      <a class="encabezado__marca" href="index.html" aria-label="AMAC, ir al inicio">AMAC</a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <ul class="navegacion__lista">
+          <li><a class="navegacion__enlace" href="index.html">Vacantes</a></li>
+          <li><a class="navegacion__enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+          <li><a class="navegacion__enlace" href="empresa-vacantes.html" aria-current="page">Para empresas</a></li>
+          <li><a class="navegacion__enlace" href="login.html">Iniciar sesión</a></li>
+          <li><a class="navegacion__enlace navegacion__enlace--destacado" href="registro-candidato.html">Crear cuenta</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="principal" id="principal">
+    <div class="contenedor">
+        <h1>Panel de vacantes</h1>
+        <p>Consulta las vacantes de tu empresa y sus postulaciones.</p>
+
+  <div class="tabla-responsiva" tabindex="0" role="region"
+       aria-labelledby="titulo-tabla-vacantes">
+    <table>
+      <caption id="titulo-tabla-vacantes">Vacantes de Incubadora Regia</caption>
+      <thead>
+        <tr>
+          <th scope="col">Vacante</th>
+          <th scope="col">Ubicación</th>
+          <th scope="col">Estatus</th>
+          <th scope="col">Solicitudes</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Asesor de creación de proyectos</th>
+          <td>San Pedro Garza García</td>
+          <td>Activa</td>
+          <td>14</td>
+          <td><button type="button" class="boton boton--secundario">Pausar</button></td>
+        </tr>
+        <tr>
+          <th scope="row">Mentor para emprendedores</th>
+          <td>Monterrey · Remoto</td>
+          <td>Pausada</td>
+          <td>8</td>
+          <td><button type="button" class="boton boton--secundario">Reactivar</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__rejilla">
+      <div>
+        <p class="pie__marca">AMAC</p>
+        <p>Plataforma de empleo para personas adultas mayores en Monterrey y su área metropolitana.</p>
+      </div>
+      <nav aria-label="Enlaces del pie de página">
+        <p class="pie__titulo">Explorar</p>
+        <ul class="pie__lista">
+          <li><a class="pie__enlace" href="index.html">Vacantes disponibles</a></li>
+          <li><a class="pie__enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+          <li><a class="pie__enlace" href="empresa-vacantes.html">Para empresas</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="pie__titulo">¿Necesita ayuda?</p>
+        <p>Llámenos y con gusto le ayudamos a postularse.</p>
+        <p><a class="pie__enlace" href="tel:+528100000000">81 0000 0000</a></p>
+      </div>
+    </div>
+    <div class="contenedor">
+      <p class="pie__legal">© 2026 AMAC · Proyecto escolar OT2026-WEB</p>
+    </div>
+  </footer>
+
+  <a class="boton-ayuda" href="tel:+528100000000">
+    <img class="boton-ayuda__icono" src="img/icono-telefono.svg" alt="" width="24" height="24">
+    <span>Llamar a AMAC</span>
+  </a>
+</body>
+</html>
