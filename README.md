@@ -3,7 +3,7 @@
 Proyecto final **OT2026-WEB**. Sitio web estático, escrito a mano en HTML5 semántico y CSS3, que convierte el prototipo de Figma de la Entrega 1 en páginas reales. AMAC es una plataforma de empleo pensada para **personas adultas mayores** en Monterrey y su área metropolitana, por eso el diseño cuida el tamaño del texto, el contraste y las zonas de clic amplias.
 
 - **Repositorio:** https://github.com/potamo117/amac-web
-- **Sitio publicado (Vercel):** _pendiente: pegar aquí la URL cuando se despliegue_
+- **Sitio publicado (Vercel):** https://amac-web-gamma.vercel.app
 
 
 
