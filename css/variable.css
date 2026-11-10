@@ -1,0 +1,42 @@
+:root {
+  
+  --color-primario: #192943;  
+  --color-primario-oscuro: #0e1a2f;   
+  --color-cabecera: #202945;     
+  --color-acento: #ff815b; 
+  --color-acento-oscuro: #ff6a3d;      
+  --color-fondo: #ffffff;
+  --color-fondo-busqueda: #c9e4ef;     
+  --color-fondo-resumen: #ffdaae;     
+  --color-fondo-tarjeta: #fff3e3;     
+  --color-borde-tarjeta: #fddaad;
+  --color-borde-campo: #192943;   
+
+  --color-texto: #111111;
+  --color-texto-suave: #595757;        
+
+  --color-exito: #15803d;
+  --color-error: #b91c1c;
+
+ 
+  --color-foco: #192943;
+  --color-foco-oscuro: #ff815b;        
+
+  --fuente-base: "Work Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fuente-titulo: "Baskervville", Georgia, "Times New Roman", serif;
+  --texto-base: 1.125rem;              
+  --texto-h1: 2rem;                   
+  --texto-h1-grande: 3rem;            
+  --texto-h2: 1.5rem;
+  --texto-titulo-tarjeta: 1.75rem;     
+  --texto-seccion: 1.75rem;
+  --texto-lista: 1.25rem;
+
+  --espacio-s: 0.5rem;
+  --espacio-m: 1rem;
+  --espacio-l: 2rem;
+  --espacio-xl: 3rem;
+  --radio: 0.625rem;                   
+  --altura-control: 3rem;             
+  --sombra-ayuda: 0 4px 14px rgb(0 0 0 / 0.3);
+}
