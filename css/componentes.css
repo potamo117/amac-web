@@ -163,3 +163,49 @@
 @media (min-width: 1024px) {
   .buscador-filtros__campos { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
+
+/* Persona 2 — Inicio de sesión y campos de formulario */
+.acceso {
+  width: calc(100% - 2rem);
+  max-width: 36rem;
+  margin-inline: auto;
+}
+
+.acceso form {
+  margin-block: 1.5rem;
+}
+
+.campo-formulario {
+  display: grid;
+  gap: 0.5rem;
+  margin-block-end: 1rem;
+}
+
+.campo-formulario label {
+  font-weight: 600;
+}
+
+.campo-formulario input:not([type="checkbox"]),
+.campo-formulario textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 3.25rem;
+  padding: 0.625rem 0.75rem;
+  border: 2px solid var(--color-primario);
+  border-radius: 0.5rem;
+  font: inherit;
+}
+
+.campo-formulario__ayuda {
+  margin: 0;
+  color: var(--color-texto-suave);
+}
+
+.campo-formulario input[aria-invalid="true"] {
+  border-color: var(--color-error);
+}
+
+.campo-formulario__error {
+  margin: 0;
+  color: var(--color-error);
+}
