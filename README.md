@@ -3,6 +3,7 @@
 Proyecto final **OT2026-WEB**. Sitio web estático, escrito a mano en HTML5 semántico y CSS3, que convierte el prototipo de Figma de la Entrega 1 en páginas reales. AMAC es una plataforma de empleo pensada para **personas adultas mayores** en Monterrey y su área metropolitana, por eso el diseño cuida el tamaño del texto, el contraste y las zonas de clic amplias.
 
 - **Repositorio:** https://github.com/potamo117/amac-web
+
 - **Sitio publicado (Vercel):** https://amac-web-gamma.vercel.app
 
 
@@ -15,6 +16,7 @@ Proyecto final **OT2026-WEB**. Sitio web estático, escrito a mano en HTML5 sem�
 | **Luis Carlos Ramírez Mora** | Persona 1 — Líder Técnico y módulo de vacantes | Estructura del repositorio y carpetas. `css/variables.css` (tokens extraídos de Figma), `css/base.css` (reset, tipografía, foco visible, "saltar al contenido") y `css/layout.css`. Plantilla maestra: encabezado con navegación, pie de página y botón flotante de ayuda (RF-052). Páginas `index.html` (buscador, filtros y 6 tarjetas) y `vacante.html` (detalle con "Postularme" y "Llamar"). Componentes `.tarjeta-vacante`, `.buscador-filtros`, `.detalle-vacante`, `.boton`, `.etiqueta-dato` y `.boton-ayuda`. Revisión del Figma y ajustes de contraste. |
 | **Victor Gilberto Márquez Gallegos** | Persona 2 — Autenticación y candidatos | `login.html`, `registro-candidato.html` (con `fieldset` y `legend`), componente `.campo-formulario`, auditoría Lighthouse y pruebas responsivas. _(completar al terminar)_ |
 | **Adriana Montserrat Reyna Cuatianquiz** | Persona 3 — Gestión y empresa | `mis-solicitudes.html`, `empresa-vacantes.html`, componentes `.etiqueta-estatus` y `.tabla-responsiva`, validación W3C y este README. _(completar al terminar)_ |
+
 
 ---
 
@@ -116,6 +118,7 @@ amac-web/
 
 **`index.html` en celular (390 px)**
 
+
 ![index en celular](img/movil.png)
 
 **`index.html` en escritorio (1440 px)**
@@ -127,7 +130,8 @@ amac-web/
 ![Lighthouse Accessibility](img/lighthouse.png)
 
 
-
 ## Flujo de la demo
 
 Listado (`index.html`) → detalle (`vacante.html`) → "Postularme" → `mis-solicitudes.html`, en celular y en escritorio.
+
+
